@@ -1,9 +1,6 @@
 ---
 # try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Welcome to Slidev
 info: |
@@ -49,7 +46,7 @@ transition: fade-out
 background: ./image1.png
 backgroundSize: cover
 backgroundPosition: center
-backgroundDark: 0.9
+backgroundDark: 0.2
 ---
 # A very... very.. beautiful story...
 
@@ -304,10 +301,11 @@ This date... would no longer be just another day on the calendar
 Remember $18/12/2022$
 
 Because...
-$$ {1|3|2|4|5|all}
+$$ {1|2|3|4|all}
 \begin{aligned} You \\
-\nabla \cdot This \\
-\nabla Never forget\\
+\nabla \cdot Never \\
+\nabla forget\\
+\nabla this\\
 \nabla Day\\
 \end{aligned}
 $$
@@ -361,22 +359,20 @@ And that's it! The most beautiful ending to this story...
 
 ---
 foo: bar
-dragPos:
-  square: 662,33,167,_,-16
 ---
 
 # Drag the glass so Lio can kiss it 😄
 
 Double click on cup image and just drag...
 
+<div class="relative flex gap-4">
 <div>
-<div>
-  <img src="/imagepart1.jpg" class="w-40 h-40 object-cover rounded-lg" />
+    <v-drag pos="100,140,168,168">
+    <img src="/imagepart2.jpg" class="w-80 h-80 object-cover rounded-lg cursor-move" />
+  </v-drag>
 </div>
 <div>
-  <v-drag pos="594,141,168,168">
-    <img src="/imagepart2.jpg" class="w-40 h-40 object-cover rounded-lg cursor-move" />
-  </v-drag>
+  <img src="/imagepart1.jpg" class="w-80 h-80 object-cover rounded-lg absolute top-0 right-0" />
 </div>
 </div>
 
